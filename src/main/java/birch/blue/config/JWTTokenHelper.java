@@ -1,18 +1,19 @@
 package birch.blue.config;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Component;
-
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
 import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
+
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm; 
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys; 
 
 @Component
 public class JWTTokenHelper {
@@ -26,9 +27,8 @@ public class JWTTokenHelper {
 	@Value("${jwt.auth.expires_in}")
     private int expiresIn;
 	
+	
 	private SignatureAlgorithm SIGNATURE_ALGORITHM = SignatureAlgorithm.HS256;
-
-
 	
 	private Claims getAllClaimsFromToken(String token) {
         Claims claims;

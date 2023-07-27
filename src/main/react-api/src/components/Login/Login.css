@@ -1,0 +1,45 @@
+main
+{
+    width: 300px;
+    align-content: center;
+    border: 1px solid gray;
+    padding: 40px;
+    padding-top: 20px ;
+    border-radius: 5px;
+    margin: auto;
+}
+
+form
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+input, button
+{
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 5px;
+    height: 36px;
+}
+
+button
+{
+    margin-top: 15px;
+    color: black;
+    background-color: silver;
+}
+
+.errorMessage
+{
+    color: red;
+    font-size: 18px;
+}
+
+.hidden
+{
+    left: -999999px;
+}

@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input{
+  border: solid 1px silver;
+}
+
+.two_columns{
+  display: flex;
+  flex-direction: row;
+}
+
+.title{
+  margin: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.role_checkbox{
+  text-emphasis: none;
+  width: fit-content;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.role_checkbox > input[type='checkbox']{
+  margin-right: 10px;
+  width: 25px;
+}
+
+.form_control_checkbox{
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.form_control_checkbox > input[type='checkbox']{
+  margin-right: 10px;
+  width: 25px;
+}
+
+.user_details{
+  position:relative;
+  text-emphasis: none;
+  display: flex;
+  height: 70px;
+  width: 300px;
+  margin: 15px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.user_list{
+  margin: 20px;
+}
+
+.user_details:hover{
+  background-color: lightgray;
+  box-shadow: none;
+  border-bottom: 1px solid gray;
+}
+
+.user_details .fullName{
+  position: absolute;
+  font-size: 22px;
+  font-weight: bold;
+  left: 15px;
+  top: 15px;
+  letter-spacing: 2px;
+}
+
+.user_details .username{
+  position: absolute;
+  font-size: 16px;
+  font-weight: normal;
+  left: 20px;
+  top: 40px;
+}
+
+.user_details .email{
+  position: absolute;
+  font-size: 16px;
+  font-weight: normal;
+  right: 20px;
+  top: 40px;
+}
+
+.user_details .indicator{
+  position: absolute;
+  top:2px;
+  right: 2px;
+  width: 20px;
+}
+
+.user_form{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.user_form>label{
+  margin: 5px;
+}
+
+.form_control{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 5px;
+  row-gap: 10px;
+}
+
+.users_button_group{
+  width:600px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.users_button_group>button{
+  background-color: #4292ec;
+  color: aliceblue;
+  border: solid 1px silver;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.roles{
+  margin: 20px;
+  padding:20px;
+  border-left: solid 1px silver;
+}

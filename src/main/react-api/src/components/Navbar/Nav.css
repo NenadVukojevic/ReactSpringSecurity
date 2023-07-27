@@ -1,0 +1,35 @@
+.nav{
+    background-color: #000000;
+    color:#FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-main{
+    font-size: x-large;
+}
+
+.nav ul{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    padding: 10px;
+}
+
+.nav li{
+    text-emphasis: none;
+}
+
+.nav a{
+    text-decoration: none;
+    color:#BBBBBB;
+}
+
+.nav a:hover{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+    

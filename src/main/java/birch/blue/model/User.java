@@ -99,7 +99,7 @@ public class User implements UserDetails {
 	}
 	
 	
-	@ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+	@ManyToMany(cascade = CascadeType.DETACH,fetch = FetchType.EAGER)
 	@JoinTable(name = "USER_ROLES", joinColumns= @JoinColumn(name="USER_ID"),  inverseJoinColumns = @JoinColumn(name="ROLE_ID"))
 	private List<Authority> authorities;
 
